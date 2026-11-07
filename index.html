@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Diwali, My Love 🪔</title>
+<meta name="theme-color" content="#1a0533">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪔</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#ffd166;--pink:#ff4d8d;--orange:#ff8c1a;--violet:#7b2ff7}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:'Poppins',sans-serif;color:#fff;overflow-x:hidden;min-height:100vh;
+background:linear-gradient(135deg,#1a0533,#3b0a57,#6b0f4a,#1a0533);background-size:400% 400%;animation:bg 14s ease infinite}
+@keyframes bg{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
+canvas#fx{position:fixed;inset:0;z-index:1;pointer-events:none}
+.stars i{position:fixed;width:3px;height:3px;border-radius:50%;background:#fff;animation:tw 3s infinite;z-index:0}
+@keyframes tw{0%,100%{opacity:.1;transform:scale(.5)}50%{opacity:1;transform:scale(1.4)}}
+.lantern{position:fixed;bottom:-80px;width:34px;height:46px;border-radius:12px 12px 16px 16px;z-index:0;opacity:.85;
+box-shadow:0 0 24px currentColor;animation:rise linear infinite}
+.lantern:before{content:"";position:absolute;top:-8px;left:50%;width:14px;height:8px;background:var(--gold);transform:translateX(-50%);border-radius:3px}
+@keyframes rise{to{transform:translateY(-120vh) translateX(var(--dx)) rotate(12deg)}}
+main{position:relative;z-index:2;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px 18px 60px}
+.rangoli{width:min(230px,55vw);height:auto;animation:spin 24s linear infinite;filter:drop-shadow(0 0 18px #ff8c1a)}
+@keyframes spin{to{transform:rotate(360deg)}}
+h1{font-family:'Great Vibes',cursive;font-weight:400;font-size:clamp(3rem,13vw,7rem);line-height:1.05;margin-top:6px;
+background:linear-gradient(90deg,#ffd166,#ff4d8d,#ff8c1a,#7bf2ff,#ffd166);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
+animation:shine 5s linear infinite,pop 1.4s cubic-bezier(.2,1.6,.4,1) both;filter:drop-shadow(0 0 14px rgba(255,180,60,.6))}
+@keyframes shine{to{background-position:300% 0}}
+@keyframes pop{from{transform:scale(0) rotate(-8deg);opacity:0}}
+.sub{font-size:clamp(1rem,3.6vw,1.4rem);letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin:6px 0 18px;animation:fade 2s .6s both}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}}
+.card{max-width:620px;padding:22px 26px;border-radius:22px;background:rgba(255,255,255,.09);backdrop-filter:blur(10px);
+border:1px solid rgba(255,209,102,.45);box-shadow:0 0 40px rgba(255,77,141,.35);min-height:150px;animation:fade 2s 1s both,float 5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+#msg{font-size:clamp(1rem,3.8vw,1.2rem);line-height:1.8;font-weight:300;white-space:pre-wrap}
+#msg:after{content:"▍";color:var(--gold);animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.diyas{display:flex;gap:clamp(8px,3vw,22px);margin:30px 0 14px;flex-wrap:wrap;justify-content:center}
+.diya{position:relative;width:54px;height:40px;cursor:pointer}
+.diya .bowl{position:absolute;bottom:0;width:100%;height:24px;border-radius:0 0 60px 60px;background:linear-gradient(#ff8c1a,#b3341a);box-shadow:inset 0 4px 0 #ffd166}
+.diya .flame{position:absolute;bottom:22px;left:50%;width:16px;height:30px;margin-left:-8px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
+background:radial-gradient(#fff,#ffd166 40%,#ff6a00);transform:scale(0);transform-origin:bottom;box-shadow:0 0 30px 14px rgba(255,160,0,.7);transition:transform .6s cubic-bezier(.2,1.8,.4,1)}
+.lit .flame{transform:scale(1);animation:fl .15s infinite alternate}
+@keyframes fl{from{transform:scale(1,1) rotate(-3deg)}to{transform:scale(.92,1.1) rotate(3deg)}}
+button{font:500 1.05rem 'Poppins';color:#fff;border:0;border-radius:50px;padding:14px 34px;cursor:pointer;
+background:linear-gradient(90deg,var(--pink),var(--orange),var(--violet));background-size:200%;animation:shine 3s linear infinite,glow 1.6s infinite alternate;box-shadow:0 0 22px var(--pink)}
+button:active{transform:scale(.95)}
+@keyframes glow{to{box-shadow:0 0 40px var(--orange)}}
+.foot{margin-top:26px;color:var(--gold);font-family:'Great Vibes',cursive;font-size:clamp(1.8rem,7vw,2.6rem);animation:fade 2s 1.4s both}
+.wish{margin-top:20px;min-height:2.4em;max-width:560px;font-size:clamp(1.05rem,4vw,1.35rem);font-weight:500;color:var(--gold);text-shadow:0 0 14px #ff8c1a;animation:wi 4s ease both infinite}
+@keyframes wi{0%{opacity:0;transform:translateY(16px) scale(.9)}12%,85%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-12px)}}
+.heart{display:inline-block;animation:hb 1s infinite}
+@keyframes hb{20%{transform:scale(1.3)}40%{transform:scale(1)}}
+</style>
+</head>
+<body>
+<canvas id="fx"></canvas>
+<div class="stars" id="stars"></div>
+<main>
+  <svg class="rangoli" viewBox="-100 -100 200 200" id="rangoli"></svg>
+  <h1 id="title">Happy Diwali</h1>
+  <div class="sub" id="sub">to the light of my life</div>
+  <div class="card"><div id="msg"></div></div>
+  <div class="wish" id="wish"></div>
+  <div class="diyas" id="diyas"></div>
+  <button id="btn">🪔 Light the Diyas</button>
+  <div class="foot">Forever yours, <span id="from"></span> <span class="heart">❤️</span></div>
+</main>
+<script>
+/* ✏️ EDIT THESE ✏️ */
+const NAME = "My Love";
+const FROM = "Otto";
+const MESSAGE =
+`My ${NAME},
+
+This is our very first Diwali together, and
+I want you to know what it means to me.
+
+We’re more than a couple. You’re my home, my
+best friend, my peace and my favourite person
+in every room. You gave so much meaning to this
+thing called life, and I’ve loved you like it’s
+the one thing that keeps my heart beating.
+
+Every diya I light tonight is a wish for you:
+may your days glow, your dreams come true,
+and may we light up a hundred more Diwalis
+side by side. ✨
+
+Happy Diwali, my love! 🎆`;
+const WISHES = [
+  "May our first Diwali be the first of a lifetime 🪔",
+  "You are my light, my festival, my forever ❤️",
+  "Every spark in the sky is a reason I love you 🎆",
+  "Thank you for giving my life its meaning ✨",
+  "More than a couple, you’re my whole world 💞",
+  "May happiness shine on you like a thousand diyas 🌟",
+  "With you, every day feels like Diwali 🎇",
+  "Here’s to our first of many celebrations together 🥰"
+];
+/* ---------------------- */
+document.getElementById('from').textContent = FROM;
+document.getElementById('sub').textContent = "to the love of my life, our first Diwali";
+document.title = "Happy Diwali, " + NAME + " 🪔";
+
+// Rangoli
+const cols = ['#ff4d8d','#ffd166','#ff8c1a','#7bf2ff','#b86bff','#6bff9e'];
+let r = '';
+for (let ring = 0; ring < 3; ring++) {
+  const n = 8 + ring * 4, rad = 28 + ring * 24, size = 14 - ring * 2;
+  for (let i = 0; i < n; i++) {
+    const a = i * 360 / n;
+    r += `<ellipse cx="0" cy="-${rad}" rx="${size / 2.2}" ry="${size}" fill="${cols[(i + ring) % 6]}" opacity=".9" transform="rotate(${a})"/>`;
+    r += `<circle cx="0" cy="-${rad + size + 5}" r="2.2" fill="#fff" transform="rotate(${a + 180 / n})"/>`;
+  }
+}
+r += '<circle r="12" fill="#ffd166"/><circle r="6" fill="#ff4d8d"/>';
+document.getElementById('rangoli').innerHTML = r;
+
+// Stars + lanterns
+const st = document.getElementById('stars');
+for (let i = 0; i < 70; i++) {
+  const s = document.createElement('i');
+  s.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${Math.random()*3}s`;
+  st.appendChild(s);
+}
+function lantern() {
+  const l = document.createElement('div'), c = cols[Math.random()*6|0];
+  l.className = 'lantern';
+  l.style.cssText = `left:${Math.random()*100}vw;background:${c};color:${c};--dx:${Math.random()*120-60}px;animation-duration:${9+Math.random()*9}s;transform:scale(${.6+Math.random()*.9})`;
+  document.body.appendChild(l);
+  setTimeout(() => l.remove(), 19000);
+}
+setInterval(lantern, 900);
+for (let i = 0; i < 6; i++) setTimeout(lantern, i * 250);
+
+// Typewriter
+let ti = 0; const msg = document.getElementById('msg');
+(function type() {
+  if (ti <= MESSAGE.length) { msg.textContent = MESSAGE.slice(0, ti++); setTimeout(type, 32); }
+})();
+
+// Diyas
+const dw = document.getElementById('diyas'), diyas = [];
+for (let i = 0; i < 7; i++) {
+  const d = document.createElement('div');
+  d.className = 'diya'; d.innerHTML = '<div class="flame"></div><div class="bowl"></div>';
+  d.onclick = () => d.classList.toggle('lit');
+  dw.appendChild(d); diyas.push(d);
+}
+
+// Fireworks
+const cv = document.getElementById('fx'), cx = cv.getContext('2d');
+let W, H, parts = [], rockets = [];
+function size() { W = cv.width = innerWidth; H = cv.height = innerHeight; }
+addEventListener('resize', size); size();
+function launch(x, y) {
+  rockets.push({x: x ?? Math.random()*W, y: H, ty: y ?? H*(.15+Math.random()*.4), c: cols[Math.random()*6|0]});
+}
+function burst(x, y, c) {
+  const n = 70 + Math.random()*40|0, shape = Math.random() < .3;
+  for (let i = 0; i < n; i++) {
+    const a = i / n * Math.PI * 2, sp = shape ? 4.5 : 1 + Math.random()*5;
+    parts.push({x, y, vx: Math.cos(a)*sp, vy: Math.sin(a)*sp*(shape?1:1), life: 1, c: Math.random()<.3 ? '#fff' : c});
+  }
+}
+function loop() {
+  cx.globalCompositeOperation = 'destination-out';
+  cx.fillStyle = 'rgba(0,0,0,.2)'; cx.fillRect(0, 0, W, H);
+  cx.globalCompositeOperation = 'lighter';
+  rockets = rockets.filter(k => {
+    k.y -= 9; cx.fillStyle = k.c; cx.fillRect(k.x, k.y, 3, 8);
+    if (k.y <= k.ty) { burst(k.x, k.y, k.c); return false; } return true;
+  });
+  parts = parts.filter(p => {
+    p.x += p.vx; p.y += p.vy; p.vy += .05; p.vx *= .985; p.life -= .014;
+    cx.globalAlpha = Math.max(p.life, 0); cx.fillStyle = p.c;
+    cx.beginPath(); cx.arc(p.x, p.y, 2.2, 0, 7); cx.fill();
+    return p.life > 0;
+  });
+  cx.globalAlpha = 1;
+  requestAnimationFrame(loop);
+}
+loop();
+setInterval(() => launch(), 1800);
+addEventListener('pointerdown', e => launch(e.clientX, e.clientY));
+
+// Rotating wishes
+let wi = 0; const wEl = document.getElementById('wish');
+function nextWish() { wEl.textContent = WISHES[wi++ % WISHES.length]; }
+nextWish(); setInterval(nextWish, 4000);
+
+// Button
+document.getElementById('btn').onclick = () => {
+  diyas.forEach((d, i) => setTimeout(() => d.classList.add('lit'), i * 220));
+  for (let i = 0; i < 9; i++) setTimeout(() => launch(), i * 250);
+  for (let i = 0; i < 40; i++) setTimeout(lantern, i * 60);
+};
+</script>
+</body>
+</html>
